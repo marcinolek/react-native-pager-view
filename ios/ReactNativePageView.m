@@ -234,9 +234,10 @@
         NSInteger fallbackIndex = self.currentIndex >= maxPage ? maxPage : self.currentIndex;
         
         [self goTo:fallbackIndex animated:NO];
-    } else {
-        [self goTo:newIndex animated:NO];
-    }
+    } 
+    // else {
+    //     [self goTo:newIndex animated:NO];
+    // }
 }
 
 - (void)goTo:(NSInteger)index animated:(BOOL)animated {
